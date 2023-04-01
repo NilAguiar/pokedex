@@ -36,6 +36,5 @@ const PokeApi = {
             .then(pokemons => pokemons.map(PokeApi.getPokemonDetail))
             .then(detailRequest => Promise.all(detailRequest))
             .then(pokemonsDetails => pokemonsDetails)
-            .catch(error => console.log(error))
     }
 }
